@@ -8,7 +8,7 @@ export default defineConfig({
     port:3000,
     proxy:{
       '/api':{
-        target: 'http://localhost:8000',
+        target: 'https://shailesh-sahu.github.io/JOb/jobs.json',
         changeOrigin:true,
         rewrite: (path)=> path.replace(/^\/api/,''),
       }
